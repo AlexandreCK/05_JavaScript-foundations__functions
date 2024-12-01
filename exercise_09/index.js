@@ -1,4 +1,4 @@
-// Import and execute
+//import and execute
 
 import getDistanceMessageFromSumTo100 from "./getDistanceMessageFromSumTo100.js";
 

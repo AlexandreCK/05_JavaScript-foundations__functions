@@ -1,4 +1,4 @@
-// Import and execute
+//import and execute
 
 import isGreaterThan from "./isGreaterThan.js";
 
