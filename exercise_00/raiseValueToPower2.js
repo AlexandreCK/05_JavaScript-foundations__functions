@@ -8,15 +8,17 @@
   * - output: one boolean
 */
 
+const POWER = 2;
+
 /**
  * Raise one number to power of two
  * @param {number} base
  * @returns number
  */
 const raiseValueToPower2 = function (base) {
-  const result = Math.pow(base, 2);
+    const result = Math.pow(base, POWER);
 
-  return result;
+    return result;
 };
 
 export default raiseValueToPower2;
