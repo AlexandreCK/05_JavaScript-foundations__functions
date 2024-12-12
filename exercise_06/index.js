@@ -11,8 +11,8 @@ let testInputs = [
     { collection: "Essayist" },
 ];
 
-for (let i in testInputs) {
-    let { collection } = testInputs[i];
+for (let input in testInputs) {
+    let { collection } = testInputs[input];
     console.log(
         `Collection: ${collection}. Has elements? ${checkCollectionHasElements(
             collection

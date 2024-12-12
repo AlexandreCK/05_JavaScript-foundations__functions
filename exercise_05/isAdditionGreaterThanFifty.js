@@ -7,6 +7,8 @@
 
 import isTypeOf from "../exercise_07/isTypeOf.js";
 
+const THRESHOLD = 50;
+
 /**
  * Check if sum of two numbers is 50 or more.
  * @param {number} summand1 First number.
@@ -17,7 +19,7 @@ function isAdditionGreaterThanFifty(summand1, summand2) {
     if (!isTypeOf(summand1, "number") || !isTypeOf(summand2, "number")) {
         return false;
     }
-    return summand1 + summand2 >= 50;
+    return summand1 + summand2 >= THRESHOLD;
 }
 
 export default isAdditionGreaterThanFifty;

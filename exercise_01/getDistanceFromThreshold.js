@@ -7,6 +7,8 @@
 
 import isTypeOf from "../exercise_07/isTypeOf.js";
 
+const DEFAULT_DISTANCE = 0;
+
 /**
  * Calculate the distance between a value and a threshold.
  * @param {number} value Number to compare.
@@ -15,7 +17,7 @@ import isTypeOf from "../exercise_07/isTypeOf.js";
  */
 function getDistanceFromThreshold(value, threshold) {
     if (!isTypeOf(value, "number") || !isTypeOf(threshold, "number")) {
-        return 0;
+        return DEFAULT_DISTANCE;
     }
     return threshold - value;
 }

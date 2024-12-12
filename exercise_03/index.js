@@ -7,12 +7,12 @@ console.log();
 
 let testInputs = [10, "Helicobacter pylori", 400, 5000, -154];
 
-for (let i in testInputs) {
+for (let input in testInputs) {
     console.log(
         `Limit: ${
-            testInputs[i]
+            testInputs[input]
         }. Random number within the limit: ${generateRandomNumberInRange(
-            testInputs[i]
+            testInputs[input]
         )}`
     );
 }

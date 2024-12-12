@@ -14,8 +14,8 @@ let testInputs = [
     { value: 8.75, type: "string" },
 ];
 
-for (let i in testInputs) {
-    let { value, type } = testInputs[i];
+for (let input in testInputs) {
+    let { value, type } = testInputs[input];
     console.log(
         `Value: ${value}. Type: ${type}. Matches? ${isTypeOf(value, type)}`
     );

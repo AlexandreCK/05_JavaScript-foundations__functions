@@ -20,6 +20,8 @@
 import getTotalWordsFromString from "../exercise_02/getTotalWordsFromString.js";
 import isTypeOf from "../exercise_07/isTypeOf.js";
 
+const WORD_THRESHOLD = 5;
+
 /**
  * Format string based on word count. Uppercase if more than 5 words, if not, lowercase.
  * @param {string} sentence String to format.
@@ -31,7 +33,9 @@ function formatStringByWordsLength(sentence) {
     }
 
     let numberOfWords = getTotalWordsFromString(sentence);
-    return numberOfWords > 5 ? sentence.toUpperCase() : sentence.toLowerCase();
+    return numberOfWords > WORD_THRESHOLD
+        ? sentence.toUpperCase()
+        : sentence.toLowerCase();
 }
 
 export default formatStringByWordsLength;

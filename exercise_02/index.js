@@ -14,10 +14,10 @@ let testInputs = [
     1936,
 ];
 
-for (let i in testInputs) {
+for (let input in testInputs) {
     console.log(
-        `Input: ${testInputs[i]}. Words: ${getTotalWordsFromString(
-            testInputs[i]
+        `Input: ${testInputs[input]}. Words: ${getTotalWordsFromString(
+            testInputs[input]
         )}`
     );
 }

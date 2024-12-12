@@ -7,7 +7,7 @@ console.log();
 
 let testInputs = [70, 26, "Advanced Algebra", -20];
 
-for (let i in testInputs) {
-    let value = testInputs[i];
+for (let input in testInputs) {
+    let value = testInputs[input];
     console.log(`Value: ${value}. ${getDistanceMessageFromSumTo100(value)}`);
 }

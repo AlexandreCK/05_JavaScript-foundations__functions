@@ -11,8 +11,8 @@ let testInputs = [
     { summand1: 48, summand2: 1 },
 ];
 
-for (let i in testInputs) {
-    let { summand1, summand2 } = testInputs[i];
+for (let input in testInputs) {
+    let { summand1, summand2 } = testInputs[input];
     console.log(
         `Summand 1: ${summand1}. Summand 2: ${summand2}. Sum >= 50? ${isAdditionGreaterThanFifty(
             summand1,

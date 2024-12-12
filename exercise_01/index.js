@@ -13,8 +13,8 @@ let testInputs = [
     { value: -100, threshold: 1000 },
 ];
 
-for (let i in testInputs) {
-    let { value, threshold } = testInputs[i];
+for (let input in testInputs) {
+    let { value, threshold } = testInputs[input];
     console.log(
         `Value: ${value}. Threshold: ${threshold}. Distance: ${getDistanceFromThreshold(
             value,

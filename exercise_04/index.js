@@ -12,8 +12,8 @@ let testInputs = [
     { value: 118000, threshold: 10 },
 ];
 
-for (let i in testInputs) {
-    let { value, threshold } = testInputs[i];
+for (let input in testInputs) {
+    let { value, threshold } = testInputs[input];
     console.log(
         `Value: ${value}. Threshold: ${threshold}. Greater? ${isGreaterThan(
             value,

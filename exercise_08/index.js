@@ -10,8 +10,8 @@ let testInputs = [
     "Beauty will save the world.",
 ];
 
-for (let i in testInputs) {
-    let sentence = testInputs[i];
+for (let input in testInputs) {
+    let sentence = testInputs[input];
     console.log(
         `Sentence: "${sentence}" Formatted: ${formatStringByWordsLength(
             sentence

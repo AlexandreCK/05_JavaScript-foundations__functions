@@ -6,14 +6,16 @@
 
 import isTypeOf from "../exercise_07/isTypeOf.js";
 
+const MIN_LIMIT = 0;
+
 /**
  * Generate random number from 0 to the stated limit.
  * @param {number} limit Maximum number.
  * @returns {number} Random number or 0 if invalid input.
  */
 function generateRandomNumberInRange(limit) {
-    if (!isTypeOf(limit, "number") || limit < 0) {
-        return 0;
+    if (!isTypeOf(limit, "number") || limit < MIN_LIMIT) {
+        return MIN_LIMIT;
     }
     return Math.floor(Math.random() * (limit + 1));
 }
